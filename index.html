@@ -4,38 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ahmad Khresat's professional CV and technical portfolio">
+
     <title>Ahmad Khresat | Personal CV</title>
+
+    <!-- Bootstrap CSS Framework -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
-<style>
-
-</style>
-
 <body>
-    <header class="hero "style="background-color: #000;">
-        <div class="container">
+
+    <!-- Header -->
+    <header class="hero">
+        <div class="container hero-content">
             <p class="eyebrow">PERSONAL PORTFOLIO</p>
+
             <h1>Ahmad Khresat</h1>
+
             <h2>Computer Science Student | Software Development Trainee</h2>
+
             <div class="contact">
                 <a href="mailto:Ahmadkhresat861@gmail.com">
                     Ahmadkhresat861@gmail.com
                 </a>
+
                 <a href="tel:+962779571194">0779571194</a>
+
                 <span>Amman, Jordan</span>
             </div>
-            <a class="button"
-               href="https://github.com/ahmadkhresat861-commits/edu-course-platform"
-               target="_blank"
-               rel="noopener noreferrer">
+
+            <a
+                class="btn btn-light project-button"
+                href="https://github.com/ahmadkhresat861-commits/edu-course-platform"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 View GitHub Project
             </a>
         </div>
     </header>
-    <main class="container">
+
+    <!-- Main Content -->
+    <main class="container cv-content">
+
+        <!-- Professional Summary -->
         <section class="section" id="about">
             <h2>Professional Summary</h2>
+
             <p>
                 Motivated Computer Science student at Jerash University
                 with a strong foundation in modern web development
@@ -45,97 +64,165 @@
                 communication, and adaptability skills.
             </p>
         </section>
+
+        <!-- Technical Skills -->
         <section class="section" id="skills">
             <h2>Technical Skills</h2>
+
             <div class="skills-grid">
                 <article class="skill-card">
                     <h3>Frontend</h3>
-                    <p>HTML5, CSS3, JavaScript (ES6+), React.js, Responsive Design</p>
+                    <p>
+                        HTML5, CSS3, JavaScript (ES6+), React.js,
+                        Responsive Design
+                    </p>
                 </article>
+
                 <article class="skill-card">
-                    <h3>Backend & Databases</h3>
-                    <p>Supabase, Database Fundamentals, Relational Databases</p>
+                    <h3>Backend &amp; Databases</h3>
+                    <p>
+                        Supabase, Database Fundamentals,
+                        Relational Databases
+                    </p>
                 </article>
+
                 <article class="skill-card">
                     <h3>Tools</h3>
                     <p>Git, GitHub, Microsoft Excel</p>
                 </article>
+
                 <article class="skill-card">
                     <h3>Core Competencies</h3>
-                    <p>Problem Solving, SDLC, Analytical Thinking</p>
+                    <p>
+                        Problem Solving, SDLC, Analytical Thinking
+                    </p>
                 </article>
             </div>
         </section>
+
+        <!-- Professional Experience -->
         <section class="section" id="experience">
             <h2>Professional Experience</h2>
-            <article class="timeline-item">
-                <h3>Sales Representative</h3>
-                <p class="organization">Arwad Company</p>
-                <p class="date">November 2023 – April 2024</p>
-                <ul>
-                    <li>Identified prospective clients and supported client acquisition.</li>
-                    <li>Delivered product presentations and maintained client relationships.</li>
-                    <li>Developed communication and negotiation skills.</li>
-                </ul>
-            </article>
-            <article class="timeline-item">
-                <h3>Sales Coordinator</h3>
-                <p class="organization">Carrefour Jordan, City Mall</p>
-                <p class="date">August 2021 – August 2022</p>
-                <ul>
-                    <li>Coordinated workflows and operational scheduling.</li>
-                    <li>Managed daily documentation and customer inquiries.</li>
-                    <li>Strengthened organization and time-management skills.</li>
-                </ul>
-            </article>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <article class="timeline-item h-100">
+                        <h3>Sales Representative</h3>
+                        <p class="organization">Arwad Company</p>
+                        <p class="date">November 2023 &ndash; April 2024</p>
+
+                        <ul>
+                            <li>
+                                Identified prospective clients and supported
+                                client acquisition.
+                            </li>
+                            <li>
+                                Delivered product presentations and maintained
+                                client relationships.
+                            </li>
+                            <li>
+                                Developed communication and negotiation skills.
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <article class="timeline-item h-100">
+                        <h3>Sales Coordinator</h3>
+                        <p class="organization">Carrefour Jordan, City Mall</p>
+                        <p class="date">August 2021 &ndash; August 2022</p>
+
+                        <ul>
+                            <li>
+                                Coordinated workflows and operational scheduling.
+                            </li>
+                            <li>
+                                Managed daily documentation and customer inquiries.
+                            </li>
+                            <li>
+                                Strengthened organization and time-management skills.
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
         </section>
+
+        <!-- Education -->
         <section class="section" id="education">
             <h2>Education</h2>
+
             <article class="timeline-item">
                 <h3>Bachelor of Computer Science</h3>
                 <p class="organization">Jerash University</p>
-                <p class="date">October 2023 – Present</p>
+                <p class="date">October 2023 &ndash; Present</p>
             </article>
+
             <article class="timeline-item">
-                <h3>High School Certificate – Agricultural Sector</h3>
+                <h3>High School Certificate &ndash; Agricultural Sector</h3>
                 <p class="date">Graduated 2023</p>
             </article>
         </section>
+
+        <!-- Technical Projects -->
         <section class="section" id="projects">
             <h2>Technical Projects</h2>
+
             <article class="project-card">
                 <h3>Educational Course Platform</h3>
+
                 <p>
                     A full-stack educational platform designed to help
                     students access online courses and learning content.
                 </p>
+
                 <p class="tech-stack">
-                    React.js · JavaScript · Supabase · HTML · CSS · Git
+                    React.js &middot; JavaScript &middot; Supabase
+                    &middot; HTML &middot; CSS &middot; Git
                 </p>
-                <a href="https://github.com/ahmadkhresat861-commits/edu-course-platform"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Explore Repository →
+
+                <a
+                    href="https://github.com/ahmadkhresat861-commits/edu-course-platform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Explore Repository &rarr;
                 </a>
             </article>
         </section>
+
+        <!-- Soft Skills -->
         <section class="section" id="soft-skills">
             <h2>Soft Skills</h2>
+
             <p>
-                Analytical Problem Solving · Team Collaboration ·
-                Communication · Adaptability · Time Management
+                Analytical Problem Solving &middot; Team Collaboration
+                &middot; Communication &middot; Adaptability
+                &middot; Time Management
             </p>
         </section>
+
+        <!-- Languages -->
         <section class="section" id="languages">
             <h2>Languages</h2>
-            <p>Arabic: Native</p>
-            <p>English: Intermediate</p>
+
+            <div class="language-grid">
+                <p><strong>Arabic:</strong> Native</p>
+                <p><strong>English:</strong> Intermediate</p>
+            </div>
         </section>
+
     </main>
-    <footer>
+
+    <!-- Footer -->
+    <footer class="site-footer">
         <div class="container">
-            <p>© 2026 Ahmad Khresat | Personal CV</p>
+            <p class="mb-0">
+                &copy; 2026 Ahmad Khresat | Personal CV
+            </p>
         </div>
     </footer>
+
 </body>
 </html>
